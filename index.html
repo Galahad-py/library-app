@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800|plus-jakarta-sans:300,500,600,700,800|poppins:100,200,300,400,500" rel="stylesheet" />
+
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="library-container">
+        <h1>My Library</h1>
+        <button id="newBookButton">New Book</button>
+    
+    
+        <div class="form-container" id="bookFormContainer">
+            <h3>Add a New Book</h3>
+            <form id="bookForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <span class="error-message" id="titleError"> Please enter a title</span>
+
+                <input type="text" id="author" placeholder="Author" required>
+                <span class="error-message" id="authorError"> Please enter an Author</span>
+
+                <input type="number" id="pages" placeholder="Number of Pages" required min="0">
+                <span class="error-message" id="pagesError"> Please enter valid number of pages</span>
+                
+                <label>
+                    <input type="checkbox" id="read"> Read
+                </label>
+                <button type="submit" class="submit-btn">Add Book</button>
+            </form>
+        </div>
+        
+        <button id="viewLibraryBtn">View Library</button>
+        <div class="library" id="library"></div>
+    </div>
+
+</body>
+</html>
